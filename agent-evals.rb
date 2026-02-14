@@ -7,22 +7,22 @@ class AgentEvals < Formula
   on_macos do
     on_arm do
       url "https://github.com/thinkwright/agent-evals/releases/download/v0.1.0/agent-evals_darwin_arm64.tar.gz"
-      sha256 "1613ea68fc35344f1a806d046ee04e7b200f44f3c686f34de0f6c7db90cc29e1"
+      sha256 "554a29ead7e2d055ba8d0e2027f4f37f7f240675189f1810d6f66b6cd27bdfe1"
     end
     on_intel do
       url "https://github.com/thinkwright/agent-evals/releases/download/v0.1.0/agent-evals_darwin_amd64.tar.gz"
-      sha256 "fe14f0bc366426db134a4a80ec26690fa894589eadab525111a3fefa11852393"
+      sha256 "d87261516c89aa05d65441451da94cf7dd00095a5f047c407795868cd6db4c76"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thinkwright/agent-evals/releases/download/v0.1.0/agent-evals_linux_arm64.tar.gz"
-      sha256 "e26888d521899110ac2e8b0ea63efbb0e698edd9c6a6b377c320ec1230b9be79"
+      sha256 "23a60b05ed7626518379e7a7adeba158823ab57ed9d1546892491f78af5311ce"
     end
     on_intel do
       url "https://github.com/thinkwright/agent-evals/releases/download/v0.1.0/agent-evals_linux_amd64.tar.gz"
-      sha256 "474ee9fb8be8f4b3740ebe65825d25d0a874d9218c4acf87a4d75f17234cb4cf"
+      sha256 "a264c721bc92948f6f13ed8565d5f905eea296516a0edcaaf3956d589a37255d"
     end
   end
 
