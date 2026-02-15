@@ -11,7 +11,7 @@ class Clog < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.1.0/claude-chronicle_darwin_amd64.tar.gz"
-      sha256 "ca2c8c35ffb7adb88941d3ccc7cdfbc78f5ee2124d2570ee028a9bd9df6c209b"
+      sha256 "4932fdc26144728ea60337e00577f0f54d1cf4d33a47af42800f4169335bf669"
 
       def install
         bin.install "clog"
@@ -19,7 +19,7 @@ class Clog < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.1.0/claude-chronicle_darwin_arm64.tar.gz"
-      sha256 "ca0b0ff14fa24285cf6991fdaeeff180bd97bb048bbd7036170d23298820c0d1"
+      sha256 "cdcf640c04c614475e154f83d1ccd735f14e2be425d781516dcc9256ca62b7f6"
 
       def install
         bin.install "clog"
@@ -30,14 +30,14 @@ class Clog < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.1.0/claude-chronicle_linux_amd64.tar.gz"
-      sha256 "ac97713ca6a17d4fce3e78e034167402346d6c971190aedf6254e553bf83973e"
+      sha256 "303416940f3abcd8cd8ce9d1b2de4bedfdd74fffbf7f418d06460132166363ee"
       def install
         bin.install "clog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.1.0/claude-chronicle_linux_arm64.tar.gz"
-      sha256 "714591711aa2670db72c44686b6b23332fa804a4d5747717ecbb5a841c2a276e"
+      sha256 "2dcb1d56d36992d131dcad27b31d942580db6982e7801d02200bc77877757412"
       def install
         bin.install "clog"
       end
