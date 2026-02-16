@@ -5,21 +5,21 @@
 class Clog < Formula
   desc "Terminal dashboard for navigating, searching, and monitoring Claude Code activity"
   homepage "https://thinkwright.ai/clog"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.1.1/claude-chronicle_darwin_amd64.tar.gz"
-      sha256 "9f94fc9ad8ac3795b31b37443e1505e99086e71ce3f5becf819b75e8b99c36c2"
+      url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.2.0/claude-chronicle_darwin_amd64.tar.gz"
+      sha256 "317ae95510897b3cd8c083b7a98f217bc6c9e5663bdd08c061175b2597d5a268"
 
       def install
         bin.install "clog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.1.1/claude-chronicle_darwin_arm64.tar.gz"
-      sha256 "9eee67d0f3852639517c138b634388ab4f590f5f771db319e400391fb346fc7c"
+      url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.2.0/claude-chronicle_darwin_arm64.tar.gz"
+      sha256 "fa478333e2aa1dbc5f02a63a02397520a3a762418618e2a260b8e09cff5e3373"
 
       def install
         bin.install "clog"
@@ -29,15 +29,15 @@ class Clog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.1.1/claude-chronicle_linux_amd64.tar.gz"
-      sha256 "5de8a09c19c3127f3926ca6b97c5346eb9b298aeeb588368096bf63e288ae73d"
+      url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.2.0/claude-chronicle_linux_amd64.tar.gz"
+      sha256 "8d3062bbc8d26774deee66f7ab213a56b814c84ede25c54c672834fc99eabbbf"
       def install
         bin.install "clog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.1.1/claude-chronicle_linux_arm64.tar.gz"
-      sha256 "72356f465d9ae2e4a192439362f90900e971d91c1a63924e570640bb03bbcbd6"
+      url "https://github.com/thinkwright/claude-chronicle/releases/download/v0.2.0/claude-chronicle_linux_arm64.tar.gz"
+      sha256 "522b732b1602d3da0574b1754e5fe92310dccb05f8a3f18a04f2eda19b05321c"
       def install
         bin.install "clog"
       end
