@@ -5,21 +5,21 @@
 class AgentEvals < Formula
   desc "Evaluate, test, and maintain your LLM coding agent configurations"
   homepage "https://thinkwright.ai/agent-evals"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thinkwright/agent-evals/releases/download/v0.2.0/agent-evals_darwin_amd64.tar.gz"
-      sha256 "6b2de3bb982cab39ad0dbd2dd1c3d9e8641d71415028d77f9e4b3809e427ad61"
+      url "https://github.com/thinkwright/agent-evals/releases/download/v0.3.0/agent-evals_darwin_amd64.tar.gz"
+      sha256 "577ce640a91f4e5603034d926416a12b11b1821ff7df40aa3485a2aa5b0a20d0"
 
       def install
         bin.install "agent-evals"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thinkwright/agent-evals/releases/download/v0.2.0/agent-evals_darwin_arm64.tar.gz"
-      sha256 "cfc650bb1b3e55546844de204f4f45586e6f3ce59b66c9762c499eb670c93207"
+      url "https://github.com/thinkwright/agent-evals/releases/download/v0.3.0/agent-evals_darwin_arm64.tar.gz"
+      sha256 "e5b3471a2f78c7082af8987d15b299bd9eb2f989537e17822940a755f0786d4b"
 
       def install
         bin.install "agent-evals"
@@ -29,15 +29,15 @@ class AgentEvals < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thinkwright/agent-evals/releases/download/v0.2.0/agent-evals_linux_amd64.tar.gz"
-      sha256 "512b257d111562e717a1faad418458e3214903a037ba7db983ac4dff34d60f6b"
+      url "https://github.com/thinkwright/agent-evals/releases/download/v0.3.0/agent-evals_linux_amd64.tar.gz"
+      sha256 "27f1fcff88d1209c7e3c0ca5f88fa269f68ac55b91c7599a755a5ad3861a24a2"
       def install
         bin.install "agent-evals"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thinkwright/agent-evals/releases/download/v0.2.0/agent-evals_linux_arm64.tar.gz"
-      sha256 "f2d3cd82460b236311529670345d5769ede1859f61ee861d638753a0c61e683f"
+      url "https://github.com/thinkwright/agent-evals/releases/download/v0.3.0/agent-evals_linux_arm64.tar.gz"
+      sha256 "d5d0c75bbc5b2589114fc6b8b52f9743f8fcd373ac2f516e33d0a147f99dfe33"
       def install
         bin.install "agent-evals"
       end
